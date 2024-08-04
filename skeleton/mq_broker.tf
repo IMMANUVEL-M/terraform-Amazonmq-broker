@@ -1,7 +1,7 @@
 module "mq_broker" {
-  # source = "git@ssh.dev.azure.com:terraform-aws-mq-broker?ref=v3.4.0"  #You can also use your source here if available 
+  # source = "git@ssh.dev.azure.com:terraform-aws-mq-broker?ref=v3.4.0"  #You can also use your local source here if available 
   #ref link https://registry.terraform.io/modules/cloudposse/mq-broker/aws/latest
-  #source                     = "cloudposse/mq-broker/aws"
+   source                    = "cloudposse/mq-broker/aws"
   version                    = "3.4.0"
   namespace                  = var.mq_broker_namespace
   stage                      = var.mq_broker_stage
