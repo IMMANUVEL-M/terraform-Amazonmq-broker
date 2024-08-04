@@ -1,4 +1,4 @@
-
+#To Get the VPC and Subnet  details from AWS 
 data "aws_vpc" "vpc_details" {
   filter {
     name   = "tag:Name"
@@ -38,7 +38,7 @@ data "aws_security_groups" "associated" {
   }
 }
 
-
+#To Retrieve Secret value details from AWS SecretManager 
 data "aws_secretsmanager_secret" "secret_name" {
   name = "Mq_secret"  # Replace with your secret name  
 }
