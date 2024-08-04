@@ -1,4 +1,5 @@
-Introduction
+Introduction :
+
 This Terraform module provisions the following resources:
 
 ActiveMQ broker with SINGLE_INSTANCE.
@@ -10,16 +11,17 @@ CloudPosse MQ Broker Module
 
 https://registry.terraform.io/modules/cloudposse/mq-broker/aws/latest
 
-Purpose
+Purpose:
+
 The purpose of this module is to simplify and provide a unique Terraform Infrastructure as Code (IAC) solution for Amazon MQ with Secret Manager integration for username and password.
 
-Usage
+Usage:
 Please use the local.tf file to provide the necessary inputs. It is not expected that inputs will be given in any other .tf files, including variables.tf.
 
-For example, the value of ActiveMQ below will provision the ActiveMQ engine in Amazon MQ. If you need RabbitMQ, you will need to change this accordingly:
+For example, from the below code line , the value of ActiveMQ  will provision the ActiveMQ engine in Amazon MQ. If you need RabbitMQ, you will need to change this accordingly 
 
-hcl
-Copy code
++++++++++++++
 mq_broker_engine_type = "ActiveMQ"
++++++++++++++
 All suggestions to improve or enhance this module are welcome.
 
